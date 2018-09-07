@@ -13,6 +13,7 @@ e.g.
 
 ## Running
 
-`pipenv run python shotty\shotty.py command --project=<Project_Value>`
-*command is list, start or stop
+`pipenv run python shotty\shotty.py type command --project=<Project_Value>`
+*type is instances volumes snapshots
+*command is list for instances, volume and snapshots, and start or stop for instances
 *project is optional
