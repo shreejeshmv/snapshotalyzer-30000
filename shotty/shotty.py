@@ -71,7 +71,7 @@ def create_snapshots(project):
         print("Starting instance {0}".format(i.id))
         i.start()
         i.wait_until_running()
-        
+
     print("Job done")
     return
 
@@ -114,6 +114,8 @@ def list_snapshots(project):
                 s.progress,
                 s.start_time.strftime("%c")
                 )))
+
+                if s.state == 'completed': break
 
     return
 
